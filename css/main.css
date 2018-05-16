@@ -32,6 +32,27 @@ p, a {
         /*-webkit-transform: translateX(-3px);*/
         /*transform: translateX(-3px);*/
 }
+.disabled-notice {
+	color: #ff8f00;
+}
+
+button.disabled, button[disabled], .button.disabled, .button[disabled] {
+	background-color: #ff6f00;
+}
+
+.button {
+	background-color: black !important;
+}
+	
+.button:hover {
+	background-color: #ff8f00;
+	border: none;
+	color: white;
+	box-shadow:
+                1px 1px #ff8f00,
+                2px 2px #ff8f00,
+                3px 3px #ff8f00;
+}
 
 
 ul, li {
@@ -95,6 +116,25 @@ ul, li {
 
  /****************************************************************/
 
+.feature {
+	background: url(../img/exp-6.jpg) no-repeat 100px 0;
+	background-attachment: fixed;
+	padding: 7rem 0;
+	margin-bottom: 5em;
+	position: static;
+}
+
+.feature .whitebg {
+	background-color: white;
+	padding: 2em 2em 2em 3em;
+}
+.feature .row {
+	margin: 0;
+}
+
+.feature h1 {
+	text-transform: uppercase;
+}
 
 /*		***************		Experience		***************/
 
@@ -403,6 +443,10 @@ ul, li {
 
 
 /*		***************		items		***************/
+.inline-list > li {
+	text-align: center;
+}
+
 
 .panel {
 	background-color: transparent;
@@ -439,9 +483,7 @@ ul, li {
 #items li > a{
 	background-color: #ff8f00;
 	padding:0 10px;
-	position: absolute;
-    top: 8px;
-    left: 16px;
+	text-align: center;
 }
 #sector {
 	padding: 3em;
@@ -493,7 +535,7 @@ svg:not(:root).svg-inline--fa {
 /* */
 
 .product-title, #reviews h1 {
-	font-size: 2.65714rem;
+	font-size: 2.1rem;
 	font-weight: 800;
 	color: #000;
 	text-transform: uppercase;
@@ -696,9 +738,6 @@ footer {
 svg:not(:root).svg-inline--fa:hover {
 	color: #ff8f00 !important;
 
-}
-.button{
-	background-color: transparent;
 }
 
 /* newslwtter*/
