@@ -14,17 +14,16 @@ p, a {
 	color: black;
 }
 .a-button, button {
-	background-color: #ff8f00;
 	padding: 6px 20px;
 	text-transform: uppercase;
 	font-size: .8em;
-	color: white;
-}
-
-.a-button:hover, button:hover {
-	background-color: white;
-	color: #ff8f00;
+	color: white;	
 	border: 1px solid #ff6f00;
+	
+}
+.a-button:hover, button:hover {
+	background-color: #ff8f00;
+	color: white;
 	box-shadow:
                 1px 1px #e0e0e0,
                 2px 2px #e0e0e0,
@@ -170,10 +169,10 @@ ul, li {
 	background-repeat: no-repeat;
 	text-align: center;
 }
-.section-1.row {
+.section-1.row, .section-2.row {
 	max-width: none;
 }
-.section-1.row .column {
+.section-1.row .column, .section-2.row .column {
 	padding: 0;
 }
 .section-1-text {
@@ -272,8 +271,8 @@ ul, li {
     transform: translate(-50%, -50%);
 }
 
-.notfjords img {
-	width: 100%;
+.fjords img {
+	width: 50%;
 }
 
 
@@ -295,7 +294,6 @@ ul, li {
 .notfjords span {
 	font-weight: 500;
 }
-
 #Experience .a-button {
 	color: white;
 	background-color: #ff8f00;
@@ -309,19 +307,6 @@ ul, li {
                 2px 2px #ff8f00,
                 3px 3px #ff8f00;
 }
-
-/*}*/
-
-.feature {
-	background: url(../img/johannes-plenio-296374-unsplash.jpg) no-repeat 100px 0;
-	background-attachment: fixed;
-	padding: 3rem 0;
-}
-
-.feature .whitebg {
-	background-color: white;
-}
-
 /****************************************************************/
  
  /*				O 	U 	R 		S 	T 	O 	R 	Y				*/
@@ -444,18 +429,51 @@ ul, li {
     left: 16px;
 }
 #sector {
-	padding: 3em;
-	background-image: url("../img/exp-3.1.jpg");
-	background-attachment: fixed;
-	background-size: cover;
-	height: 40vh;
-	background-position: absolute;
+	margin: 50px 0;
+}
+.sector-img{
+	 background-image: url("exp-3.1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 40vw;
+}
+.grid, .grid--rev, .grid--full, .grid-uniform {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -30px;
+}
+.grid__item {
+	box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    vertical-align: top;
+}
+.homepage-featured-content-wrapper {
+	position: relative;
+    display: inline-block;
+    width: 100%;
 }
 
-.sectord {
-	background-color: white;
-	position: relative;
+.homepage-featured-content-box {
+	width: 50%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 1;
 }
+.homepage-featured-content-box-inner {
+	padding: 30px;
+}
+.homepage-featured-content-box .rte, .homepage-featured-content-box-inner p {
+	margin-bottom: 0;
+}
+
 /****************************************************************/
  
  /*				C 	A 	T 	E 	G 	O 	R 	I 	E 	S				*/
