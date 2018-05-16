@@ -13,6 +13,23 @@ p, a {
 	font-family: 'Open Sans', sans-serif;
 	color: black;
 }
+
+.name h1 a{
+	line-height: 2.8125rem;
+	color: #ff8f00 !important;
+	font-weight: 900 !important;
+}
+
+.name h1 {
+	background-color: white;
+	
+	color: #ff8f00;
+}
+
+.top-bar .name h1, .top-bar .name h2, .top-bar .name h3, .top-bar .name h4, .top-bar .name p, .top-bar .name span {
+	font-weight: 900;
+	color: #ff8f00;	
+}
 .a-button, button {
 	background-color: #ff8f00;
 	padding: 6px 20px;
@@ -330,6 +347,7 @@ ul, li {
     position: absolute;
     bottom: 18px;
     left: 16px;
+    padding-left: 20px;
 }
 
 .notfjords span {
